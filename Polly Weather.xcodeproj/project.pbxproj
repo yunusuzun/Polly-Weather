@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4661A79F268C7413005050AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661A79E268C7413005050AB /* AppDelegate.swift */; };
+		4661A7A1268C7413005050AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661A7A0268C7413005050AB /* SceneDelegate.swift */; };
+		4661A7A3268C7413005050AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661A7A2268C7413005050AB /* ViewController.swift */; };
+		4661A7A6268C7413005050AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4661A7A4268C7413005050AB /* Main.storyboard */; };
+		4661A7A8268C7417005050AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4661A7A7268C7417005050AB /* Assets.xcassets */; };
+		4661A7AB268C7417005050AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4661A7A9268C7417005050AB /* LaunchScreen.storyboard */; };
+		4661A7B6268C7417005050AB /* Polly_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661A7B5268C7417005050AB /* Polly_WeatherTests.swift */; };
+		4661A7C1268C7417005050AB /* Polly_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4661A7C0268C7417005050AB /* Polly_WeatherUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4661A7B2268C7417005050AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4661A793268C7413005050AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4661A79A268C7413005050AB;
+			remoteInfo = "Polly Weather";
+		};
+		4661A7BD268C7417005050AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4661A793268C7413005050AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4661A79A268C7413005050AB;
+			remoteInfo = "Polly Weather";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4661A79B268C7413005050AB /* Polly Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Polly Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4661A79E268C7413005050AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4661A7A0268C7413005050AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4661A7A2268C7413005050AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4661A7A5268C7413005050AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4661A7A7268C7417005050AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4661A7AA268C7417005050AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4661A7AC268C7417005050AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4661A7B1268C7417005050AB /* Polly WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Polly WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4661A7B5268C7417005050AB /* Polly_WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polly_WeatherTests.swift; sourceTree = "<group>"; };
+		4661A7B7268C7417005050AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4661A7BC268C7417005050AB /* Polly WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Polly WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4661A7C0268C7417005050AB /* Polly_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polly_WeatherUITests.swift; sourceTree = "<group>"; };
+		4661A7C2268C7418005050AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4661A798268C7413005050AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4661A7AE268C7417005050AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4661A7B9268C7417005050AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4661A792268C7413005050AB = {
+			isa = PBXGroup;
+			children = (
+				4661A79D268C7413005050AB /* Polly Weather */,
+				4661A7B4268C7417005050AB /* Polly WeatherTests */,
+				4661A7BF268C7417005050AB /* Polly WeatherUITests */,
+				4661A79C268C7413005050AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4661A79C268C7413005050AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4661A79B268C7413005050AB /* Polly Weather.app */,
+				4661A7B1268C7417005050AB /* Polly WeatherTests.xctest */,
+				4661A7BC268C7417005050AB /* Polly WeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4661A79D268C7413005050AB /* Polly Weather */ = {
+			isa = PBXGroup;
+			children = (
+				4661A79E268C7413005050AB /* AppDelegate.swift */,
+				4661A7A0268C7413005050AB /* SceneDelegate.swift */,
+				4661A7A2268C7413005050AB /* ViewController.swift */,
+				4661A7A4268C7413005050AB /* Main.storyboard */,
+				4661A7A7268C7417005050AB /* Assets.xcassets */,
+				4661A7A9268C7417005050AB /* LaunchScreen.storyboard */,
+				4661A7AC268C7417005050AB /* Info.plist */,
+			);
+			path = "Polly Weather";
+			sourceTree = "<group>";
+		};
+		4661A7B4268C7417005050AB /* Polly WeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				4661A7B5268C7417005050AB /* Polly_WeatherTests.swift */,
+				4661A7B7268C7417005050AB /* Info.plist */,
+			);
+			path = "Polly WeatherTests";
+			sourceTree = "<group>";
+		};
+		4661A7BF268C7417005050AB /* Polly WeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4661A7C0268C7417005050AB /* Polly_WeatherUITests.swift */,
+				4661A7C2268C7418005050AB /* Info.plist */,
+			);
+			path = "Polly WeatherUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4661A79A268C7413005050AB /* Polly Weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4661A7C5268C7418005050AB /* Build configuration list for PBXNativeTarget "Polly Weather" */;
+			buildPhases = (
+				4661A797268C7413005050AB /* Sources */,
+				4661A798268C7413005050AB /* Frameworks */,
+				4661A799268C7413005050AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Polly Weather";
+			productName = "Polly Weather";
+			productReference = 4661A79B268C7413005050AB /* Polly Weather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4661A7B0268C7417005050AB /* Polly WeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4661A7C8268C7418005050AB /* Build configuration list for PBXNativeTarget "Polly WeatherTests" */;
+			buildPhases = (
+				4661A7AD268C7417005050AB /* Sources */,
+				4661A7AE268C7417005050AB /* Frameworks */,
+				4661A7AF268C7417005050AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4661A7B3268C7417005050AB /* PBXTargetDependency */,
+			);
+			name = "Polly WeatherTests";
+			productName = "Polly WeatherTests";
+			productReference = 4661A7B1268C7417005050AB /* Polly WeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4661A7BB268C7417005050AB /* Polly WeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4661A7CB268C7418005050AB /* Build configuration list for PBXNativeTarget "Polly WeatherUITests" */;
+			buildPhases = (
+				4661A7B8268C7417005050AB /* Sources */,
+				4661A7B9268C7417005050AB /* Frameworks */,
+				4661A7BA268C7417005050AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4661A7BE268C7417005050AB /* PBXTargetDependency */,
+			);
+			name = "Polly WeatherUITests";
+			productName = "Polly WeatherUITests";
+			productReference = 4661A7BC268C7417005050AB /* Polly WeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4661A793268C7413005050AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					4661A79A268C7413005050AB = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					4661A7B0268C7417005050AB = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 4661A79A268C7413005050AB;
+					};
+					4661A7BB268C7417005050AB = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 4661A79A268C7413005050AB;
+					};
+				};
+			};
+			buildConfigurationList = 4661A796268C7413005050AB /* Build configuration list for PBXProject "Polly Weather" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4661A792268C7413005050AB;
+			productRefGroup = 4661A79C268C7413005050AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4661A79A268C7413005050AB /* Polly Weather */,
+				4661A7B0268C7417005050AB /* Polly WeatherTests */,
+				4661A7BB268C7417005050AB /* Polly WeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4661A799268C7413005050AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4661A7AB268C7417005050AB /* LaunchScreen.storyboard in Resources */,
+				4661A7A8268C7417005050AB /* Assets.xcassets in Resources */,
+				4661A7A6268C7413005050AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4661A7AF268C7417005050AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4661A7BA268C7417005050AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4661A797268C7413005050AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4661A7A3268C7413005050AB /* ViewController.swift in Sources */,
+				4661A79F268C7413005050AB /* AppDelegate.swift in Sources */,
+				4661A7A1268C7413005050AB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4661A7AD268C7417005050AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4661A7B6268C7417005050AB /* Polly_WeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4661A7B8268C7417005050AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4661A7C1268C7417005050AB /* Polly_WeatherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4661A7B3268C7417005050AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4661A79A268C7413005050AB /* Polly Weather */;
+			targetProxy = 4661A7B2268C7417005050AB /* PBXContainerItemProxy */;
+		};
+		4661A7BE268C7417005050AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4661A79A268C7413005050AB /* Polly Weather */;
+			targetProxy = 4661A7BD268C7417005050AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4661A7A4268C7413005050AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4661A7A5268C7413005050AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4661A7A9268C7417005050AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4661A7AA268C7417005050AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4661A7C3268C7418005050AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4661A7C4268C7418005050AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4661A7C6268C7418005050AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CS5U6H6N2L;
+				INFOPLIST_FILE = "Polly Weather/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yunusuzun.Polly-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4661A7C7268C7418005050AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CS5U6H6N2L;
+				INFOPLIST_FILE = "Polly Weather/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yunusuzun.Polly-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4661A7C9268C7418005050AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CS5U6H6N2L;
+				INFOPLIST_FILE = "Polly WeatherTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yunusuzun.Polly-WeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Polly Weather.app/Polly Weather";
+			};
+			name = Debug;
+		};
+		4661A7CA268C7418005050AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CS5U6H6N2L;
+				INFOPLIST_FILE = "Polly WeatherTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yunusuzun.Polly-WeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Polly Weather.app/Polly Weather";
+			};
+			name = Release;
+		};
+		4661A7CC268C7418005050AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CS5U6H6N2L;
+				INFOPLIST_FILE = "Polly WeatherUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yunusuzun.Polly-WeatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Polly Weather";
+			};
+			name = Debug;
+		};
+		4661A7CD268C7418005050AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CS5U6H6N2L;
+				INFOPLIST_FILE = "Polly WeatherUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yunusuzun.Polly-WeatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Polly Weather";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4661A796268C7413005050AB /* Build configuration list for PBXProject "Polly Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4661A7C3268C7418005050AB /* Debug */,
+				4661A7C4268C7418005050AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4661A7C5268C7418005050AB /* Build configuration list for PBXNativeTarget "Polly Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4661A7C6268C7418005050AB /* Debug */,
+				4661A7C7268C7418005050AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4661A7C8268C7418005050AB /* Build configuration list for PBXNativeTarget "Polly WeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4661A7C9268C7418005050AB /* Debug */,
+				4661A7CA268C7418005050AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4661A7CB268C7418005050AB /* Build configuration list for PBXNativeTarget "Polly WeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4661A7CC268C7418005050AB /* Debug */,
+				4661A7CD268C7418005050AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4661A793268C7413005050AB /* Project object */;
+}
