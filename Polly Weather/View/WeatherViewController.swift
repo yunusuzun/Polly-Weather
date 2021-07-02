@@ -30,7 +30,6 @@ final class WeatherViewController: UIViewController {
         
         location()
         showSkeleton()
-        getCity(locationInfo.latitute, locationInfo.longitude)
     }
 }
 
@@ -39,7 +38,7 @@ extension WeatherViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locationInfo.latitute = String(format: "%f", locations[0].coordinate.latitude)
         locationInfo.longitude = String(format: "%f", locations[0].coordinate.longitude)
-        
+        getCity(locationInfo.latitute, locationInfo.longitude)
         locationManager.stopUpdatingLocation()
     }
     
@@ -84,7 +83,7 @@ extension WeatherViewController: UICollectionViewDelegate, UICollectionViewDataS
 
 // MARK: - Data
 extension WeatherViewController {
-    private func getWeather(_ woeid: Int) {
+    func getWeather(_ woeid: Int) {
         AF.request("https://www.metaweather.com/api/location/\(String(woeid))", method: .get).validate().responseDecodable(of: Weather.self) { (response) in
             guard let weather = response.value else { return }
             self.weatherViewModel = WeatherViewModel(weather: weather)
@@ -95,7 +94,8 @@ extension WeatherViewController {
     }
     
     private func getCity(_ latitute: String, _ longitude: String) {
-        AF.request("https://www.metaweather.com/api/location/search/?lattlong=41,28", method: .get).validate().responseDecodable(of: [City].self) { (response) in
+        // Istanbul coordinate = 41,28
+        AF.request("https://www.metaweather.com/api/location/search/?lattlong=\(latitute),\(longitude)", method: .get).validate().responseDecodable(of: [City].self) { (response) in
             guard let city = response.value else { return }
             self.cityListViewModel = CityListViewModel(cityList: city)
             self.getWeather(self.cityListViewModel.cityAtIndex(0).woeid)

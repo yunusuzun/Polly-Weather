@@ -33,7 +33,6 @@ final class DetailViewController: UIViewController {
         weatherView.backgroundColor = UIColor(red: 0.20, green: 0.22, blue: 0.29, alpha: 1.00)
         overrideUserInterfaceStyle = .dark
         getWeather("https://www.metaweather.com/api/location/\(String(city!.woeid))")
-        
     }
 }
 
@@ -51,8 +50,6 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource {
         cell.backgroundColor = UIColor(red: 0.15, green: 0.17, blue: 0.23, alpha: 1.00)
         return cell
     }
-    
-    
 }
 
 // MARK: - Data

@@ -45,6 +45,13 @@
 			remoteGlobalIDString = 4661A79A268C7413005050AB;
 			remoteInfo = "Polly Weather";
 		};
+		467FF999268F2A0800D4C790 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4661A793268C7413005050AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4661A79A268C7413005050AB;
+			remoteInfo = "Polly Weather";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +72,7 @@
 		4661A7C0268C7417005050AB /* Polly_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polly_WeatherUITests.swift; sourceTree = "<group>"; };
 		4661A7C2268C7418005050AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4661A7D2268C7EB7005050AB /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		467FF994268F2A0700D4C790 /* deneme.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = deneme.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		469F0B80268DCDDE009906FC /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		46F3E38C268C875700A2B67D /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		46F3E38F268C9DC800A2B67D /* Extension+Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Float.swift"; sourceTree = "<group>"; };
@@ -108,6 +116,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		467FF991268F2A0700D4C790 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -142,6 +157,7 @@
 				4661A79B268C7413005050AB /* Polly Weather.app */,
 				4661A7B1268C7417005050AB /* Polly WeatherTests.xctest */,
 				4661A7BC268C7417005050AB /* Polly WeatherUITests.xctest */,
+				467FF994268F2A0700D4C790 /* deneme.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,12 +165,12 @@
 		4661A79D268C7413005050AB /* Polly Weather */ = {
 			isa = PBXGroup;
 			children = (
+				4661A79E268C7413005050AB /* AppDelegate.swift */,
+				4661A7A0268C7413005050AB /* SceneDelegate.swift */,
 				46F3E38E268C9DB700A2B67D /* Extension */,
 				4661A7D0268C7E80005050AB /* ViewModel */,
 				4661A7CF268C7E7B005050AB /* View */,
 				4661A7CE268C7E77005050AB /* Model */,
-				4661A79E268C7413005050AB /* AppDelegate.swift */,
-				4661A7A0268C7413005050AB /* SceneDelegate.swift */,
 				4661A7A7268C7417005050AB /* Assets.xcassets */,
 				4661A7AC268C7417005050AB /* Info.plist */,
 			);
@@ -299,6 +315,24 @@
 			productReference = 4661A7BC268C7417005050AB /* Polly WeatherUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		467FF993268F2A0700D4C790 /* deneme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 467FF99D268F2A0800D4C790 /* Build configuration list for PBXNativeTarget "deneme" */;
+			buildPhases = (
+				467FF990268F2A0700D4C790 /* Sources */,
+				467FF991268F2A0700D4C790 /* Frameworks */,
+				467FF992268F2A0700D4C790 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				467FF99A268F2A0800D4C790 /* PBXTargetDependency */,
+			);
+			name = deneme;
+			productName = deneme;
+			productReference = 467FF994268F2A0700D4C790 /* deneme.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -316,6 +350,10 @@
 						TestTargetID = 4661A79A268C7413005050AB;
 					};
 					4661A7BB268C7417005050AB = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 4661A79A268C7413005050AB;
+					};
+					467FF993268F2A0700D4C790 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 4661A79A268C7413005050AB;
 					};
@@ -337,6 +375,7 @@
 				4661A79A268C7413005050AB /* Polly Weather */,
 				4661A7B0268C7417005050AB /* Polly WeatherTests */,
 				4661A7BB268C7417005050AB /* Polly WeatherUITests */,
+				467FF993268F2A0700D4C790 /* deneme */,
 			);
 		};
 /* End PBXProject section */
@@ -360,6 +399,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4661A7BA268C7417005050AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		467FF992268F2A0700D4C790 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -508,6 +554,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		467FF990268F2A0700D4C790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -520,6 +573,11 @@
 			isa = PBXTargetDependency;
 			target = 4661A79A268C7413005050AB /* Polly Weather */;
 			targetProxy = 4661A7BD268C7417005050AB /* PBXContainerItemProxy */;
+		};
+		467FF99A268F2A0800D4C790 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4661A79A268C7413005050AB /* Polly Weather */;
+			targetProxy = 467FF999268F2A0800D4C790 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -675,7 +733,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yunusuzun.Polly-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -695,7 +753,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yunusuzun.Polly-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -787,6 +845,46 @@
 			};
 			name = Release;
 		};
+		467FF99B268F2A0800D4C790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CS5U6H6N2L;
+				INFOPLIST_FILE = deneme/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunusuzun.deneme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Polly Weather.app/Polly Weather";
+			};
+			name = Debug;
+		};
+		467FF99C268F2A0800D4C790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CS5U6H6N2L;
+				INFOPLIST_FILE = deneme/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunusuzun.deneme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Polly Weather.app/Polly Weather";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -822,6 +920,15 @@
 			buildConfigurations = (
 				4661A7CC268C7418005050AB /* Debug */,
 				4661A7CD268C7418005050AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		467FF99D268F2A0800D4C790 /* Build configuration list for PBXNativeTarget "deneme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				467FF99B268F2A0800D4C790 /* Debug */,
+				467FF99C268F2A0800D4C790 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
