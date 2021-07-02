@@ -48,6 +48,14 @@ extension WeatherViewController: CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        if locationInfo.latitute == "" && locationInfo.longitude == "" {
+            return
+        } else {
+            getCity(locationInfo.latitute, locationInfo.longitude)
+        }
+    }
 }
 
 // MARK: - CollectionView
