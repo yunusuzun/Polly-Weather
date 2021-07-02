@@ -9,12 +9,15 @@ import XCTest
 @testable import Polly_Weather
 
 class Polly_WeatherTests: XCTestCase {
-    var weather: Weather!
+    private var weather: Weather!
+    private var city: City!
+    private var cityViewModel: CityViewModel!
     private var weatherViewModel: WeatherViewModel!
 
     override func setUpWithError() throws {
-        weather = Weather(consolidatedWeather: [ConsolidatedWeather(id: 5, weatherStateName: "Showers", weatherStateAbbr: "c", windDirectionCompass: "SSW", created: "2021-07-02T06:32:01.461705Z", applicableDate: "2021-07-02", theTemp: 12.4, windSpeed: 24.5, humidity: 53, visibility: 8.6, predictability: 73)], time: "2021-07-02T04:48:25.965685+01:00", sunRise: "2021-07-02T04:48:25.965685+01:00", sunSet: "2021-07-02T04:48:25.965685+01:00", timezoneName: "LMT", parent: Parent(title: "England", locationType: "Region / State / Province", woeid: 24554868, lattLong: "52.883560,-1.974060"), title: "London", locationType: "City", woeid: 44418, lattLong: "51.506321,-0.12714", timezone: "Europe/London")
+        weather = Weather(consolidatedWeather: [ConsolidatedWeather(weatherStateName: "Showers", weatherStateAbbr: "c", applicableDate: "2021-07-02", theTemp: 12.4, windSpeed: 24.5, humidity: 53, visibility: 8.6, predictability: 73)], title: "London", woeid: 44418, lattLong: "51.506321,-0.12714", timezone: "Europe/London")
         
+        city = City(distance: 10, title: "San Francisco", locationType: "City", woeid: 2487956, lattLong: "37.777119, -122.41964")
     }
 
     override func tearDownWithError() throws {
@@ -25,14 +28,17 @@ class Polly_WeatherTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let weather = self.weather
+        let city = self.city
+        cityViewModel = CityViewModel(city: city!)
         weatherViewModel = WeatherViewModel(weather: weather!)
         XCTAssertEqual(weatherViewModel.city, "London")
+        XCTAssertEqual(cityViewModel.title, "San Francisco")
     }
     
-    func weatherModelExample() throws {
-        let weather = self.weather
-        XCTAssertEqual(weather!.lattLong, "51.506321,-0.1")
-    }
+//    func weatherModelExample() throws {
+//        let weather = self.weather
+//        XCTAssertEqual(weather!.lattLong, "51.506321,-0.1")
+//    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
@@ -40,5 +46,4 @@ class Polly_WeatherTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }
